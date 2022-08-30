@@ -1,6 +1,6 @@
 const Sol = ({setSol, sol}) => {
   return (
-    <section>
+    <section className="sol">
       <h2>SOL - {sol}</h2>
       <input
         type="range"

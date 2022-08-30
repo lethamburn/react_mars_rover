@@ -3,6 +3,11 @@
 @import url("./styles/_gallery.scss");
 @import url("./styles/_header.scss");
 @import url("./styles/_home.scss");
+@import url("./styles/_selectrover.scss");
+@import url("./styles/_rover.scss");
+@import url("./styles/_sol.scss");
+@import url("./styles/_cameras.scss");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +18,10 @@
 }
 
 :root {
-  --heading: #fffef4;
-  --background: #f2993f;
-  --primary: #000102;
-  --secondary: #403e3c;
+  --heading: #e28c5d;
+  --background: #2b2e2e;
+  --primary: #d0dedd;
+  --secondary: #5d93cc;
 }
 
 body {
@@ -42,6 +47,11 @@ footer {
   align-items: center;
 }
 
-section {
-  min-height: 76vh;
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }

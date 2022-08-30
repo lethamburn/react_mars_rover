@@ -29,13 +29,13 @@ const Rover = () => {
   }, [rover, sol]);
 
   return (
-    <article>
+    <article className="rover">
       <h2>{rover !== null ? rover.toUpperCase() : "Select the rover:"}</h2>
       <SelectRover setRover={setRover} setCamera={setCamera} />
       {rover !== null ? (
-        <div>
+        <>
           <Sol sol={sol} setSol={setSol} />
-          <Cameras setCamera={setCamera} rover={rover} />
+          <Cameras setCamera={setCamera} camera={camera} rover={rover} />
           {curiosityPhotos.length ? (
             <div className="gallery cf">
               {filteredPhotos.map((item) => (
@@ -47,7 +47,7 @@ const Rover = () => {
           ) : (
             <p>Choose another settings.</p>
           )}
-        </div>
+        </>
       ) : null}
     </article>
   );

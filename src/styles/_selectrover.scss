@@ -1,0 +1,34 @@
+.selectrover {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selectrover button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 11rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.selectrover button:hover{
+    transform: scale(1.05);
+}
+
+.selectrover .spirit img {
+  height: 9rem;
+  filter: invert(100%);
+}
+
+.selectrover .curiosity img {
+  height: 9rem;
+  filter: invert(100%);
+}
+
+.selectrover .opportunity img {
+  height: 9rem;
+  filter: invert(100%);
+}

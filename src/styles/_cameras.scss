@@ -1,0 +1,28 @@
+.cameras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cameras div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cameras div button {
+    padding: 0.3rem 0.5rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.3rem; 
+    transition: 0.3s all ease-in-out;
+}
+
+.cameras div button:hover{
+color: var(--secondary)
+}

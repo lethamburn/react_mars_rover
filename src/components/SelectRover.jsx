@@ -1,12 +1,26 @@
-const SelectRover = ({setRover, setCamera}) => {
+const SelectRover = ({ setRover, setCamera }) => {
   return (
-    <section>
-      <button onClick={() => setRover("curiosity") & setCamera("")}>
-        Curiosity
+    <section className="selectrover">
+      <button
+        onClick={() => setRover("spirit") & setCamera("")}
+        className="spirit"
+      >
+        <img src="/spiritoport.png" alt="Spirit rover" />
+        <h3>Spirit</h3>
       </button>
-      <button onClick={() => setRover("spirit") & setCamera("")}>Spirit</button>
-      <button onClick={() => setRover("opportunity") & setCamera("")}>
-        Opportunity
+      <button
+        onClick={() => setRover("curiosity") & setCamera("")}
+        className="curiosity"
+      >
+        <img src="/curiosity.png" alt="Curiosity rover" />
+        <h3>Curiosity</h3>
+      </button>
+      <button
+        onClick={() => setRover("opportunity") & setCamera("")}
+        className="opportunity"
+      >
+        <img src="/spiritoport.png" alt="Opportuniy rover" />
+        <h3>Opportunity</h3>
       </button>
     </section>
   );
