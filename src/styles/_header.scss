@@ -7,6 +7,10 @@ header {
   gap: 3rem;
 }
 
+header h1 {
+  text-transform: uppercase;
+}
+
 header nav ul {
   display: flex;
   gap: 3rem;
@@ -17,6 +21,7 @@ header nav ul li a {
   color: inherit;
   transition: 0.3s all ease-in-out;
   font-weight: bold;
+  font-family: "Nasa";
 }
 
 header nav ul li a:hover {
@@ -30,6 +35,6 @@ header .social img {
   transition: all 0.3s ease-in-out;
 }
 
-header .social img:hover{
+header .social img:hover {
   filter: invert(0%);
 }

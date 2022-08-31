@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-      <h1>Mars Rover Photos</h1>
+      <h1>Mars Rover</h1>
       <nav>
         <ul>
           <li>
@@ -19,7 +19,7 @@ const Header = () => {
       </nav>
       <div className="social">
         <a href="https://github.com/lethamburn" target="_blank">
-          <img src="/github.png" />
+          <img src="icons/github.png" />
         </a>
       </div>
     </header>

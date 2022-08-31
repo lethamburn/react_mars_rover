@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;700&display=swap");
 
+@font-face {
+  font-family: "Nasa";
+  font-display: block;
+  src: url("../public/fonts/nasa.otf") format("opentype");
+}
+
 @import url("./styles/_gallery.scss");
 @import url("./styles/_header.scss");
 @import url("./styles/_home.scss");
@@ -7,6 +13,7 @@
 @import url("./styles/_rover.scss");
 @import url("./styles/_sol.scss");
 @import url("./styles/_cameras.scss");
+@import url("./styles/_about.scss");
 
 * {
   margin: 0;
@@ -18,14 +25,16 @@
 }
 
 :root {
-  --heading: #e28c5d;
-  --background: #2b2e2e;
-  --primary: #d0dedd;
-  --secondary: #5d93cc;
+  --heading: #eb601d;
+  --background: #20201e;
+  --primary: #faf7f3;
 }
 
 body {
   background-color: var(--background);
+  background-image: url("../public/images/background.jpg");
+  background-size: 100%;
+  background-position: center center;
   color: var(--primary);
 }
 
@@ -40,11 +49,14 @@ h3 {
 }
 
 footer {
-  height: 10vh;
+  height: 5vh;
   bottom: 0;
   display: flex;
   justify-content: center;
+  padding: 0 3rem;
   align-items: center;
+  background-color: var(--primary);
+  color: var(--background);
 }
 
 button {
@@ -54,4 +66,8 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+h1 {
+  font-family: "Nasa";
 }

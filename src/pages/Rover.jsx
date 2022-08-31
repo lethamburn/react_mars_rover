@@ -30,25 +30,27 @@ const Rover = () => {
 
   return (
     <article className="rover">
-      <h2>{rover !== null ? rover.toUpperCase() : "Select the rover:"}</h2>
-      <SelectRover setRover={setRover} setCamera={setCamera} />
-      {rover !== null ? (
-        <>
-          <Sol sol={sol} setSol={setSol} />
-          <Cameras setCamera={setCamera} camera={camera} rover={rover} />
-          {curiosityPhotos.length ? (
-            <div className="gallery cf">
-              {filteredPhotos.map((item) => (
-                <div key={item.id}>
-                  <img src={item.img_src} alt={item.camera.full_name} />
-                </div>
-              ))}
+      <div className="controlPanel">
+        <h2>{rover !== null ? rover.toUpperCase() : "Select the rover:"}</h2>
+        <SelectRover setRover={setRover} setCamera={setCamera} />
+        {rover !== null ? (
+          <>
+            <Sol sol={sol} setSol={setSol} />
+            <Cameras setCamera={setCamera} camera={camera} rover={rover} />
+          </>
+        ) : null}
+      </div>
+      {curiosityPhotos.length ? (
+        <div className="gallery cf">
+          {filteredPhotos.map((item) => (
+            <div key={item.id}>
+              <img src={item.img_src} alt={item.camera.full_name} />
             </div>
-          ) : (
-            <p>Choose another settings.</p>
-          )}
-        </>
-      ) : null}
+          ))}
+        </div>
+      ) : (
+        <div className="gallery">Choose another settings.</div>
+      )}
     </article>
   );
 };

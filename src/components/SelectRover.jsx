@@ -5,23 +5,24 @@ const SelectRover = ({ setRover, setCamera }) => {
         onClick={() => setRover("spirit") & setCamera("")}
         className="spirit"
       >
-        <img src="/spiritoport.png" alt="Spirit rover" />
+        <img src="/icons/rover.png" alt="Spirit rover" />
         <h3>Spirit</h3>
-      </button>
-      <button
-        onClick={() => setRover("curiosity") & setCamera("")}
-        className="curiosity"
-      >
-        <img src="/curiosity.png" alt="Curiosity rover" />
-        <h3>Curiosity</h3>
       </button>
       <button
         onClick={() => setRover("opportunity") & setCamera("")}
         className="opportunity"
       >
-        <img src="/spiritoport.png" alt="Opportuniy rover" />
+        <img src="/icons/rover.png" alt="Opportuniy rover" />
         <h3>Opportunity</h3>
       </button>
+      <button
+        onClick={() => setRover("curiosity") & setCamera("")}
+        className="curiosity"
+      >
+        <img src="/icons/rover.png" alt="Curiosity rover" />
+        <h3>Curiosity</h3>
+      </button>
+     
     </section>
   );
 };

@@ -1,7 +1,9 @@
 .gallery {
-  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  padding: 5px;
   box-sizing: border-box;
 }
 
@@ -13,11 +15,12 @@
 
 .gallery > div > img {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
   transition: 0.1s transform;
   transform: translateZ(0);
+  border: 0.12rem solid var(--primary);
 }
 
 .gallery > div:hover {
@@ -26,7 +29,7 @@
 }
 
 .gallery > div:hover > img {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.7);
   transition: 0.3s transform;
 }
 
